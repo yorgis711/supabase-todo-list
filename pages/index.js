@@ -6,6 +6,8 @@ export default function IndexPage() {
   const { user } = Auth.useUser()
 
   return (
+    <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+    <!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "cf9a7a78a5a34df2ba2fc6e7cd5aa662"}'></script><!-- End Cloudflare Web Analytics -->
     <div className="w-full h-full bg-gray-300">
       {!user ? (
         <div className="w-full h-full flex justify-center items-center p-4">
@@ -34,6 +36,7 @@ export default function IndexPage() {
             Logout
           </button>
         </div>
+
       )}
     </div>
   )
