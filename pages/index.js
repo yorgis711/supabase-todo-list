@@ -12,7 +12,7 @@ export default function IndexPage() {
           <div>
             <Auth
               supabaseClient={supabase}
-              providers={['google', 'github']}
+              providers={['google', 'discord']}
               socialLayout="horizontal"
               socialButtonSize="xlarge"
             />
